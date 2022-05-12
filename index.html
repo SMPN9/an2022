@@ -3,7 +3,20 @@
  <meta charset="UTF-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1"/>
  <style>
-  #myTable th{background-color:#808080;color:white}
+ body{overflow:hiden}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 340px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  
+}
+#myTable th{background-color:#808080;color:white}
 #myTable {white-space:nowrap;text-overflow:ellipsis;
   border-collapse: collapse;
   
@@ -18,7 +31,9 @@
   padding: 12px;
 }
 
- 
+#atas { margin:auto,padding:30px}  
+  #myTable th{position:sticky;top:-1px}
+  
 #myTable tr {
   border-bottom: 1px solid #ddd;
 }
@@ -26,14 +41,41 @@
 #myTable tr.header, #myTable tr:hover {
   background-color: #f1f1f1;
 }
+
+#hyd{display:none;}
+bt2able#myTable tbody{ display: block; }
+bta2ble#myTable thead { display: block; }
+b2table#myTable tbody {
+    height:433px;
+    overflow-y: auto;
+    overflow-x: hiden;
+}
+  
+  -webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {     
+    background: #fff;    
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #35A9DB;
+    border-radius:10px;
+}
+#tes{border-radius:3px;box-shadow:0px 1px 10px 0px rgb(0,0,0,0.3);
+  overflow:scroll;font-family: Arial, Helvetica, sans-serif; width:100%}
   
  </style>
  <body>
+ <div id='tes'>
  <table id='myTable'>
-  <tr><th>No</th><th>Tgl </th><th>Uraian</th></tr>
+  <tr><th>No</th><th>Tgl </th><th>Catatan</th></tr>
   <tr><td>1</td><td>12-05-2022 Rapat Koordinasi Persiapan AN 2022</td><td>
  <a href='https://docs.google.com/viewerng/viewer?url=https://smpn9.github.io/an2022/Salinan_013_Perka_BSKAP_tentang_POS_Penyelenggaraan_Asesmen_Nasional.pdf' >Salinan_013_Perka_BSKAP_tentang_POS_Penyelenggaraan_Asesmen_Nasional.pdf</a>  
    </td></tr>
+   
    </table>
+   </div>
   </body>
  </html>
