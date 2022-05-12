@@ -1,8 +1,35 @@
 <html>
- <body>
+
  <meta charset="UTF-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1"/>
- <table>
+ <style>
+  #myTable th{background-color:#808080;color:white}
+#myTable {white-space:nowrap;text-overflow:ellipsis;
+  border-collapse: collapse;
+  
+  border: 1px solid #ddd;
+  font-size: 12px;
+  border-radius:3px;box-shadow:0px 1px 10px 0px rgb(0,0,0,0.3);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+ 
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+  
+ </style>
+ <body>
+ <table id='myTable'>
   <tr><th>No</th><th>Tgl </th><th>Uraian</th></tr>
   <tr><td>12-05-2022 <Rapat Koordinasi Persiapan AN 2022></td><td>
  <a href='https://docs.google.com/viewerng/viewer?url=https://smpn9.github.io/an2022/Salinan_013_Perka_BSKAP_tentang_POS_Penyelenggaraan_Asesmen_Nasional.pdf' >Salinan_013_Perka_BSKAP_tentang_POS_Penyelenggaraan_Asesmen_Nasional.pdf</a>  
